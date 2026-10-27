@@ -31,7 +31,15 @@ USB stick). That means a known-good image exists to recover with if something go
 These units ship the stock Android developer options, plus a vendor "Factory settings" menu.
 
 1. Settings → About → tap *Build number* 7× to enable Developer options. If the vendor hides it,
-   open *Factory settings* (common passwords: `8888`, `1617`, `126`, `3368`, `1111`).
+   open *Factory settings*. Codes reported for this firmware family, most likely first:
+   - `1234` device/factory settings, `5678` Android/developer settings, `56789` service menu
+     (reported for `JCAC10003` builds)
+   - `000000`, or a code derived from the current date/time (AC8227L Android 13 reports), e.g.
+     `7890` + current hour, `MMDD`, `YYYYMMDD`
+   - generic: `8888`, `7788` (engineering), `3368`, `1617`, `126`, `1111`, `0000`, `123456`,
+     `3711`, `8288`
+
+   Only use these to open menus; don't change values you can't identify.
 2. Enable **USB debugging**.
 3. Connect, using one of these:
    - **Wi-Fi ADB**: put the unit and your laptop on the same network (a phone hotspot works), then
