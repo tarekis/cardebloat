@@ -32,14 +32,21 @@ These units ship the stock Android developer options, plus a vendor "Factory set
 
 1. Settings → About → tap *Build number* 7× to enable Developer options. If the vendor hides it,
    open *Factory settings*. Codes reported for this firmware family, most likely first:
-   - `1234` device/factory settings, `5678` Android/developer settings, `56789` service menu
-     (reported for `JCAC10003` builds)
+   - `1234` device/factory settings (**confirmed on this unit**), `5678` Android/developer
+     settings, `56789` service menu (reported for `JCAC10003` builds)
    - `000000`, or a code derived from the current date/time (AC8227L Android 13 reports), e.g.
      `7890` + current hour, `MMDD`, `YYYYMMDD`
    - generic: `8888`, `7788` (engineering), `3368`, `1617`, `126`, `1111`, `0000`, `123456`,
      `3711`, `8288`
 
    Only use these to open menus; don't change values you can't identify.
+
+   The Factory settings menu on this unit lists: Touch Calibration, Touch/Knob/Remote/Party
+   Control Learning, Radio, Screen Parameter, Brightness Range, Backcar Source, Can Settings,
+   Configuration Import and Export, Support Language List, Touch Screen Info, Speed and volume
+   compensation, Touch Test, Device Settings, Function Settings, Start up application selection,
+   Rear output settings, and more below. Use *Configuration Import and Export* to export the
+   current config to a USB stick before changing anything.
 2. Enable **USB debugging**.
 3. Connect, using one of these:
    - **Wi-Fi ADB**: put the unit and your laptop on the same network (a phone hotspot works), then
